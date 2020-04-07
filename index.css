@@ -2,6 +2,13 @@ html{
     background-color: yellowgreen;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
 .container{
     max-width: 1000px;
     margin: 0 auto;
