@@ -1,5 +1,4 @@
 html{
-    background-color: yellowgreen;
 }
 
 h1, h2, h3, h4, h5, p, li, a{
@@ -8,11 +7,17 @@ h1, h2, h3, h4, h5, p, li, a{
 
 nav{
     background-color: #333333;
+    padding: 50px 50px;
 }
 
 nav a{
     text-decoration: none;
     color: white;
+    padding: 20px;
+}
+
+nav a:hover{
+    color: lawngreen;
 }
 
 form{
@@ -20,9 +25,46 @@ form{
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    margin: 0 auto;
+    padding: 50px 50px;
+}
+
+form h1{
+    color: white;
+}
+
+form input{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form button{
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .container{
     max-width: 1000px;
     margin: 0 auto;
+    background-color: yellow;
+    padding: 50px 50px;
+}
+
+.theNav{
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theNav h1{
+    padding: 50px;
+    color: white;
+}
+
+.theNav a{
+    text-decoration: none;
+}
+
+footer{
+    background-color: #333333;
+    padding: 50px 50px;
 }
