@@ -5,6 +5,10 @@ h1, h2, h3, h4, h5, p, li, a{
     font-family: 'Courier New', Courier, monospace;
 }
 
+a{
+    color: blue;
+}
+
 nav{
     background-color: #333333;
     padding: 50px 50px;
@@ -73,4 +77,8 @@ footer h3{
     color: white;
     display: flex;
     justify-content: center;
+}
+
+footer a {
+    color: yellow
 }
