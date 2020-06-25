@@ -51,11 +51,11 @@ form button{
 .theNav{
     background-color: #333333;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
-.theNav h1{
+.theNav h3{
     padding: 50px;
     color: white;
 }
@@ -67,4 +67,10 @@ form button{
 footer{
     background-color: #333333;
     padding: 50px 50px;
+}
+
+footer h3{
+    color: white;
+    display: flex;
+    justify-content: center;
 }
