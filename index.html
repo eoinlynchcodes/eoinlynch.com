@@ -7,57 +7,73 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-.bgimg {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('/images/SwissIsBliss.jpg');
-  min-height: 100%;
-}
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif
+  }
+
+  .w3-row-padding img {
+    margin-bottom: 12px
+  }
+
+  .bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/images/SwissIsBliss.jpg');
+    min-height: 100%;
+  }
 </style>
+
 <body>
 
-<!-- Sidebar with image -->
+  <!-- Sidebar with image -->
 
-<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
-  <div class="bgimg"></div>
-</nav>
+  <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+    <div class="bgimg"></div>
+  </nav>
 
-<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
-    <i class="fa fa-remove"></i>
-  </a>
-  <div class="w3-bar-block w3-center">
-    <a href="index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
-    <a href="books.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Books</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
-  </div>
-</nav>
+  <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+  <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2"
+    id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright"
+      style="padding:0 12px;">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-bar-block w3-center">
+      <a href="index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+      <a href="books.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Books</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+    </div>
+  </nav>
 
-<!-- Page Content -->
-<div class="w3-main w3-padding-large" style="margin-left:40%">
+  <!-- Page Content -->
+  <div class="w3-main w3-padding-large" style="margin-left:40%">
 
-  <!-- Menu icon to open sidebar -->
-  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+    <!-- Menu icon to open sidebar -->
+    <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;"
+      onclick="openNav()"><i class="fa fa-bars"></i></span>
 
-  <!-- Header -->
-  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
-    <h1 class="w3-jumbo"><b>Eoin Lynch</b></h1>
-    <h3>Full-Stack Software Engineer.</h3>
-    <p>JavaScript / React.js / Node.js / Python & more...</p>
-    
-    <!-- <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <!-- Header -->
+    <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+      <h1 class="w3-jumbo"><b>Eoin Lynch</b></h1>
+      <h3>Full-Stack Software Engineer.</h3>
+      <p>JavaScript / React.js / Node.js / Python & more...</p>
+
+      <!-- <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
     <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333"> -->
-    <!-- <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+      <!-- <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
       <i class="fa fa-download"></i> Download Resume
     </button> -->
-  </header>
+    </header>
 
-  <!-- Portfolio Section -->
-  <!-- <div class="w3-padding-32 w3-content" id="portfolio">
+    <!-- Portfolio Section -->
+    <!-- <div class="w3-padding-32 w3-content" id="portfolio">
     <h2 class="w3-text-grey">My Portfolio</h2>
     <hr class="w3-opacity">
 
@@ -77,41 +93,97 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     </div>
   </div> -->
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
-    <h2><u>About</u></h2>
-    <hr class="w3-opacity">
-    <p>
-      I am a 25 year old Software Engineer and am massively interested in the real world implications of the code I write. 
-      <br/>
-      <br/>
-      After completing a marketing degree while racing as an elite cyclist, I started a company - visebox.com (a website that lets you find, schedule and pay for a time to speak to someone that has done what you aspire to do in business, sport or education..) and then worked in FinTech before learning to code through <a href="https://lambdaschool.com/hire-from-lambda">Lambda School.</a>
-      <br/>
-      <br/>
-      Aside from work, I run marathons, do gym work, yoga, play drums, guitar, bass and french horn, surf, cook, read and see art as much as possible and wish I didn't have to sleep...  
-    </p>
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+      <h2><u>About</u></h2>
+      <hr class="w3-opacity">
+      <p>
+        I am a 25 year old Software Engineer and am massively interested in the real world implications of the code I
+        write.
+        <br />
+        <br />
+        After completing a marketing degree while racing as an elite cyclist, I started a company - visebox.com (a
+        website that lets you find, schedule and pay for a time to speak to someone that has done what you aspire to do
+        in business, sport or education..) and then worked in FinTech before learning to code through <a
+          href="https://lambdaschool.com/hire-from-lambda">Lambda School.</a>
+        <br />
+        <br />
+        Aside from work, I cycle(road & mountain bike), run marathons, do gym work, yoga, play drums, guitar, bass and french horn, surf, cook, read
+        and see art as much as possible and wish I didn't have to sleep...
+      </p>
 
-    <h2 class="w3-padding-16">Tech Stack</h2>    
-    <hr class="w3-opacity">
-    <h5 class="w3-wide">HTML</h5>
-    <h5 class="w3-wide">CSS</h5>
-    <h5 class="w3-wide">JavaScript</h5>
-    <h5 class="w3-wide">React</h5>
-    <h5 class="w3-wide">Node</h5>
-    <h5 class="w3-wide">Redux</h5>
-    <h5 class="w3-wide">Context API</h5>
-    <h5 class="w3-wide">Python</h5>
-    <h5 class="w3-wide">Databases</h5>
-    <h5 class="w3-wide">Data Structures</h5>
-    <h5 class="w3-wide">Algorithms</h5>
+      <h2><u>Cycling Racing</u></h2>
+      <hr class="w3-opacity">
+      <p>
+        After starting cycling aged 17, I quickly got hooked on the sensations of racing, training, working to improve,
+        winning, learning about racing, bikes, how the body works, how to train while meeting interesting people and seeing interesting places thanks
+        the sport.
+        Putting myself into hard races in both Ireland and Belgium helped me improve fast. Balancing college,
+        cycling 10-20 hours per week while working part-time proved to be a challenging but rewarding endeavour.
+        <br />
+        <br />
+        Winning races, seeing Ireland and parts of Europe I otherwise wouldn't have, being mentored and coached by Svein
+        Tuft while spending time living in Girona, Spain and racing for a team setup by ex-Irish pro Morgan Fox and
+        competing in the 2016 & 2017 An Post Rás were highlights of my time racing.
+      </p>
 
-    <!-- <div class="w3-button w3-light-grey w3-padding-large w3-section cursor">
+      <h2><u>Founding visebox.com</u></h2>
+      <hr class="w3-opacity">
+      <p>
+        Visebox was a website that let you find, schedule and speak to someone that has done what you aspire to do for business, sport or education. We had a platform that handled payment, scheduling discussion, inbuilt video call software and more. 
+        We pivoted to connect prospective college students to students of the college courses they were considering enrolling in to gain an understanding of the reality of being a student in a course. 
+        <br/>
+        The idea of Visebox came to me after being mentored by <a href="https://en.wikipedia.org/wiki/Svein_Tuft">Svein Tuft</a> as a bike racer and realising the value someone can get learning from another person with experience, wisdom and knowledge.
+        A friend, Jeremiah Scully became co-founder and was instrumental in getting the product online.
+        After working on Visebox, I knew that I needed to be able to code so enrolled in <a href="https://lambdaschool.com/hire-from-lambda">Lambda School.</a>
+      </p>
+
+      <h2><u>Lambda School</u></h2>
+      <hr class="w3-opacity">
+      <p>Lambda School is a 9+ month accelerated Full-Stack Software Engineering & Computer Science program with an immersive (full-time, 40+ hours/week) hands-on curriculum based in San Francisco, backed by Stripe, Alphabet, and Y Combinator. I finished it August 2020.</p>
+      <ul>
+<li>
+  Learned and utilised technologies such as HTML, CSS, JavaScript ES6, React, Context API, Redux, Jest, Express, PostgreSQL, Python, Knex, Git and more.
+</li>
+<li>
+  Built and deployed REST APIs writing production-ready code using Node/Express and Heroku with MongoDB, AWS and PostgreSQL.
+</li>
+<li>
+  Worked under pressure to pass 3 hour code challenges each Friday.
+</li>
+<li>
+  Experienced building several products with a team using Agile and the Git workflow.
+</li>
+<li>
+  Pair programmed frequently, and worked remotely with EU, US based teams.
+</li>
+<li>
+  Learned Computer Science fundamentals and made projects associated with Data Structures, Algorithms, Algorithm Efficiency, Hash Tables, Graphs and Computer Architecture.
+</li>
+
+      </ul>
+
+      <h2 class="w3-padding-16">Tech Stack</h2>
+      <hr class="w3-opacity">
+      <h5 class="w3-wide">HTML</h5>
+      <h5 class="w3-wide">CSS</h5>
+      <h5 class="w3-wide">JavaScript</h5>
+      <h5 class="w3-wide">React</h5>
+      <h5 class="w3-wide">Node</h5>
+      <h5 class="w3-wide">Redux</h5>
+      <h5 class="w3-wide">Context API</h5>
+      <h5 class="w3-wide">Python</h5>
+      <h5 class="w3-wide">Databases</h5>
+      <h5 class="w3-wide">Data Structures</h5>
+      <h5 class="w3-wide">Algorithms</h5>
+
+      <!-- <div class="w3-button w3-light-grey w3-padding-large w3-section cursor">
       Download Resume
     </div> -->
 
 
 
-    <!-- <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+      <!-- <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
       <div class="w3-quarter w3-section">
         <span class="w3-xlarge">HTML</span><br>
       </div>
@@ -127,10 +199,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     </div> -->
 
 
-  
 
-    <!-- Testimonials -->
-    <!-- <h3 class="w3-padding-24">My Reputation</h3>
+
+      <!-- Testimonials -->
+      <!-- <h3 class="w3-padding-24">My Reputation</h3>
     <img src="/w3images/avatar_smoke.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
     <p><span class="w3-large w3-text-black w3-margin-right">Chandler Bing.</span> Web Designer.</p>
     <p>Jane Doe is just awesome. I am so happy to have met her!</p><br>
@@ -143,8 +215,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p><span class="w3-large w3-text-black w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
     <p>No one is better than Jane Doe.</p><br>
      -->
-    <!-- Grid for pricing tables -->
-    <!-- <h3 class="w3-padding-16">Tech Stack</h3>
+      <!-- Grid for pricing tables -->
+      <!-- <h3 class="w3-padding-16">Tech Stack</h3>
     <p>I am always interested and happy to learn better ways of doing things</p>
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half w3-margin-bottom">
@@ -184,63 +256,66 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         </ul>
       </div>
     </div> -->
-    
-  <!-- End About Section -->
+
+      <!-- End About Section -->
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+      <h2>Contact:</h2>
+      <hr class="w3-opacity">
+
+      <div class="w3-section">
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Ireland</p>
+        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +353863207916</p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: eoin95lynch@protonmail.ch</p>
+      </div>
+
+      <!-- Image of location/map -->
+      <!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin:32px 0"> -->
+
+      <p>Contact:</p>
+      <form id="contact" action="https://formspree.io/eoin95lynch@protonmail.ch" method="POST">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name" /></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email" /></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject" />
+        </p>
+        <textarea class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"
+          rows="8"></textarea>
+        <p>
+          <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+      <!-- End Contact Section -->
+    </div>
+    <script src="https://www.retainable.io/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
+
+    <!-- Footer -->
+    <footer class="footerExact w3-container w3-padding-64 w3-center w3-xlarge" style="margin:-24px">
+      <p><a href="https://twitter.com/eoinlynch__">Twitter</a></p>
+      <p><a href="https://github.com/eoinlynchcodes">Github</a></p>
+      <p><a href="https://medium.com/@eoinlynch">Medium</a></p>
+      <p><a href="https://www.linkedin.com/in/eoin-lynch-46857893/">LinkedIn</a></p>
+      <!-- End footer -->
+    </footer>
+
+    <!-- END PAGE CONTENT -->
   </div>
 
-  <!-- Contact Section -->
-  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
-    <h2>Contact:</h2>
-    <hr class="w3-opacity">
+  <script>
+    // Open and close sidebar
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "60%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
 
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Ireland</p>
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +353863207916</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: eoin95lynch@protonmail.ch</p>
-    </div>
-    
-    <!-- Image of location/map -->
-    <!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin:32px 0"> -->
-   
-    <p>Contact:</p>
-      <form id="contact" action="https://formspree.io/eoin95lynch@protonmail.ch" method="POST">
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"/></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"/></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"/></p>
-      <textarea class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message" rows="8" ></textarea>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
-  </div>  
-  <script src="https://www.retainable.io/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
-
-  <!-- Footer -->
-  <footer class="footerExact w3-container w3-padding-64 w3-center w3-xlarge" style="margin:-24px">
-    <p><a href="https://twitter.com/eoinlynch__">Twitter</a></p>
-    <p><a href="https://github.com/eoinlynchcodes">Github</a></p>
-    <p><a href="https://medium.com/@eoinlynch">Medium</a></p>
-    <p><a href="https://www.linkedin.com/in/eoin-lynch-46857893/">LinkedIn</a></p>
-  <!-- End footer -->
-  </footer>
-  
-<!-- END PAGE CONTENT -->
-</div>
-
-<script>
-// Open and close sidebar
-function openNav() {
-  document.getElementById("mySidebar").style.width = "60%";
-  document.getElementById("mySidebar").style.display = "block";
-}
-
-function closeNav() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
-<script src="openOrClose.js"></script>
+    function closeNav() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+  <script src="openOrClose.js"></script>
 </body>
+
 </html>
